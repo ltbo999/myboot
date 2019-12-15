@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>欢迎访问用户管理系统</title>
+    <link rel="stylesheet" href="test.css" type="text/css" />
+</head>
+<body>
+<header>
+    <hgroup>
+        <h1>欢迎访问用户管理系统</h1>
+        <h6>物联网工程</h6>
+    </hgroup>
+</header>
+<nav>
+    <ul>
+        <li>HTML 5</li> <li>CSS3</li> <li>JavaScript</li> </ul>
+</nav>
+
+<p align="center">欢迎访问用户管理系统</p>
+<center>
+    <table border="0">
+        <tr>
+            <td><a href="/user/queryAllUser" target="_blank">显示所有用户</a></td>
+        </tr>
+        <tr>
+            <td>
+                <form action="/user/queryUserId" method="post">
+                    编号：<input type="Integer" name="id" /></br>
+                    <input type="submit" value="编号查询" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="/user/queryUserName" method="post">
+                    编号：<input type="text" name="name" /></br>
+                    <input type="submit" value="姓名查询" />
+                </form>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <form action="/user/userLogin" method="post">
+            <div style="height: 428px; width: 400px; margin: 8px;  background: #fff;">
+                <div style="height: 40px;width: 400px;background: #3eb6e8;">
+                    请输入用户名与密码登录<br>
+                </div>
+                用户名：<input type="text" name="name" /><br>
+                密&nbsp;&nbsp;&nbsp;码：<input type="password" name="pwd" /><br>
+                <input type="submit" value="登录" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/user/registerpage" target="_blank"><input type="button" value="注册"/> </a>
+                <!--<img src="/images/testbackground.jpg">-->
+            </div>
+        </form>
+    </div>
+</center>
+</body>
+</html>
